@@ -1,0 +1,137 @@
+// start slider
+.slider{
+    blockquote{
+        font: {
+            size: 20px;
+            family: tahoma, Arial;
+            style: italic;
+            weight: bold;
+        }
+        line-height: 1.7;
+        text-align: center;
+        color: #5e5e5e;
+        width: 70%;
+        margin: 30px auto;
+    }
+    img{
+        width: 100%;
+    }
+    .bullets{
+        text-align: center;
+        li{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-color: $grayColor;
+            border-radius: 50%;
+            border: 2px solid $grayColor;
+            cursor: pointer;
+            &.active,
+            &:hover{
+                background-color: #fff;
+                border: 2px solid #333;
+        }
+    }
+    }
+}
+/*end slider*/
+
+/* start services */
+.services{
+    .service-box{
+        @media #{$minMedium}{
+            float: $float-l;
+            width: (100% / 3);
+            &:not(:last-of-type){
+                padding-right: 20px;
+            }
+        }
+        @media #{$maxMobile}{
+            width: 100%;
+            float: none;
+            i{
+                display: block;
+                margin-bottom: 15px;
+            }
+        }
+        h3{
+            color: #666;
+            i{
+                font-size: 35px;
+                position: relative;
+                top: 4;
+            }
+        }
+        p{
+            color: #777;
+            line-height: 1.5;
+        }
+        a{
+            color: $redColor;
+            text-decoration: none;
+        }
+    }
+}
+/* end services */
+/* start our-players */
+.our-players{
+    .player-box{
+        @media #{$minSmall}{
+            float: $float-l;
+            width: (100% / 2);
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        @media #{$minMedium}{
+            width: (100% / 3);
+            text-align: $text-l;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        @media #{$maxLarge}{
+            width: (100% / 5);
+            margin-bottom: 0;
+        }
+        @media #{$maxMobile}{
+            margin-bottom: 40px;
+        }
+        img{
+            max-width: 100%;
+        }
+        h3{
+            color: #666;
+            font-weight: normal;
+            font-size: 16px;
+            span{
+                font-weight: bold;
+            }
+        }
+        p{
+            color: #777;
+            line-height: 1.5;
+        }
+        a{
+            color: $redColor;
+            text-decoration: none;
+        }
+    }
+}
+.lorem-ipsum{
+    .lorem-box{
+        width: (94% / 3);
+        float: $float-l;
+        @media #{$maxMobile}{
+            float: none;
+            margin: auto;
+        }
+        @media #{$minSmall}{
+            &:not(:last-child){
+                margin-right: 3%;
+            }
+        }
+        img{
+            max-width: 100%;
+        }
+    }
+}
+/* end our players */

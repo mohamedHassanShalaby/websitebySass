@@ -1,0 +1,94 @@
+@import "sass/helpers/varibles";
+
+$float-l: right;
+$float-r: left;
+$text-r: left;
+$text-l: right;
+
+.header{
+    .logo{
+        @media #{$minMedium}{
+            float: $float-l;    
+            text-align: $text-l;
+        }
+        @media #{$maxMobile}{
+            float: $float-l;
+        }
+        .the-toggler{
+            right: auto;
+            left: 15px;
+        }
+    }
+    .navbar{
+        float: $float-l;
+        @media #{$minMedium}{
+            float: $float-l;  
+        }
+        li{
+            float: $float-l;
+            @media #{$maxMobile} {
+                text-align: $text-l;
+            }
+        }
+    }
+}
+
+
+
+/* start services */
+.services{
+    .service-box{
+        @media #{$minMedium}{
+            float: $float-l;
+        }
+    }
+}
+/* end services */
+/* start our-players */
+.our-players{
+    .player-box{
+        @media #{$minSmall}{
+            float: $float-l;
+        }
+        @media #{$minMedium}{
+            text-align: $text-l;
+        }
+    }
+}
+.lorem-ipsum{
+    .lorem-box{
+        float: $float-l;
+    }
+}
+/* end our players */
+
+.footer{
+    .gallery,
+    .info,
+    .contact{
+        float: $float-l;
+    }
+    .gallery{
+        .img-box{
+            img{
+                @media #{$minSmall}{
+                    float: $float-l;
+                }
+            }
+            .text{
+                @media #{$minSmall}{
+                    float: $float-l;
+                }
+            }
+        }
+    }
+    .copyright{
+        .copy-text,
+        .copy-author{
+            float: $float-l;
+        }
+        .copy-author{
+            text-align: $text-r;
+        }
+    }
+}
